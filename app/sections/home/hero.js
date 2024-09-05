@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Svg1 from "@/public/icons/svg1";
+import Mushsvg from "@/public/icons/mushsvg";
 
 const Hero = () => {
   const ref = useRef();
@@ -19,12 +20,14 @@ const Hero = () => {
 
   return (
     <>
-      <div className=" h-[300vh] relative z-0  " ref={ref}>
+      <div className=" h-[300vh] relative z-0   " ref={ref}>
         <motion.div
-          className="h-[100vh] bg-transparent sticky font-bold top-0 w-screen left-0 flex justify-center items-center "
+          className={
+            "h-[100vh] bg-transparent sticky top-0 font-bold  w-full flex justify-center items-center "
+          }
           style={{ scale: text }}
         >
-          <Svg1/>
+          <Mushsvg />
         </motion.div>
 
         <motion.div

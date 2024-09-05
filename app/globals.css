@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.cls-1 {
+.cls-3 {
   fill: none;
   stroke: #000;
   stroke-miterlimit: 10;
   stroke-width: 46px;
+}
+
+.cls-1 {
+  stroke-width: 5.94px;
+}
+
+.cls-1, .cls-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+.cls-2 {
+  stroke-width: 6px;
+}
+
+body{
+  overflow-x: hidden;
 }

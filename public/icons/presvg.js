@@ -3,9 +3,9 @@ import { useInView, useScroll, useTransform } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const Dummysv = () => {
+const Presvg = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: " -75% 0%  15% 0% " });
+  const isInView = useInView(ref, { margin: " -45% 0%  15% 0% " });
   // const { scrollYProgress } = useScroll();
   // const strokeDashoffset = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   // const pathLength = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
@@ -40,81 +40,104 @@ const Dummysv = () => {
 
   return (
     <div ref={ref}>
-      {" "}
       <motion.svg
         id="Layer_2"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1496.01 357.42"
-        width="843"
-        height="203"
+        viewBox="0 0 1604.05 391.61"
+        width="643"
+        height="204"
       >
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M168.27,124.42c-2.54-46.18-42.86-65.22-84.18-56.2C.77,80.4,3.71,240.31,86.62,247.72c40.77,6.03,77.52-15.88,76.84-62.64"
+          d="M1401.71,223.42c-6.22,103.53-147.32,72.41-140.07-22.87-2.07-37.64,15.08-85.93,57.97-93.52,34.83-8.43,68.72,4.28,81.08,39.89,3.36,8.54,8.62,32.12,4.72,33.57-45.8,4.63-93.42-.04-139.72,1.42"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M876.27,129.29c-2.54-46.18-42.86-65.22-84.18-56.2-83.32,12.18-80.38,172.09,2.53,179.5,40.77,6.03,77.52-15.88,76.84-62.64"
+          d="M543.71,223.42c-6.22,103.53-147.32,72.41-140.07-22.87-2.07-37.64,15.08-85.93,57.97-93.52,34.83-8.43,68.72,4.28,81.08,39.89,3.36,8.54,8.62,32.12,4.72,33.57-45.8,4.63-93.42-.04-139.72,1.42"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M1185.76,195.15c.81,42.22,41.29,65.41,81.66,56.68,54.56-7.53,68.99-67.59,61.52-113.35-5.4-34.73-29.64-67.62-70.85-67.43-16.93-.83-38.93,4.03-54.2,19.62-10.65,10.49-16.82,27.16-17.86,42.82-1.13,74.59.05,149.23-.27,223.84"
+          d="M23.9,228.74c2.45,74.49,113.95,76.31,136.07,13.43,26.51-63.51-4.76-155.02-86.54-135.27-21.5,4.77-40.8,21.58-46.4,44.06-8.37,79.24-.71,160.16-3.12,239.96"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M1430.27.56c-1.56,63.83-5.8,127.66-5.68,191.53.29,6.15.97,12.23,2.04,18.22,4.37,29.33,29.58,58.73,61.7,52.46"
+          d="M1174.69,162.87c-2.45-74.49-113.95-76.31-136.07-13.43-26.51,63.51,4.76,155.02,86.54,135.27,21.5-4.77,40.8-21.58,46.4-44.06,8.37-79.24.71-160.16,3.12-239.96"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M1378.82,76.2c39,.33,78,.65,116.99.98"
+          d="M747.05,112.73c-32.8-21.58-82.49-16.12-106.8,15.77-62.52,80.33,38.49,219.28,125.86,141.07,40.77-44,34.02-124.26-19.06-156.84Z"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M1083.46,189.94c.52,40.61-26.7,63.09-62.39,63.55-51.29,2.46-77.17-41.36-77.58-84.6-1.91-37.14,11.83-86.78,59.03-95.56,29.76-6.83,60.57,1.54,75.23,29.78,8.67,16.02,10.59,33.63,10.82,41.28.05,1.18-.16,2.37-1.41,3.09-46.03,3.3-93.36-.07-139.72.95"
+          d="M264.6,91.95c.83,66.73,1.67,133.46,2.5,200.2"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M360.85,79.11c-27.67-18.18-67.15-17.34-93.7,2.68-12.71,9.51-21.5,23.47-26.34,38.46-18.42,54.5,10.25,125.58,70.14,136.66,24.03,4.38,50.31-2.65,67.86-19.92,13.86-14.26,24.19-35.79,26.43-56.15,3.93-39.77-8.31-79.14-44.22-101.63l-.17-.11Z"
+          d="M264.6,159.57c16.86-33.02,66.33-56.6,102.55-48.71"
         />
         <motion.path
           variants={pathVariants}
+          stroke={2}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
-          stroke={2}
           class="cls-3"
-          d="M494.46,267.28c-.49-33.85-1.22-63.76-.66-96.4-.24-39.89-1.03-86.73,47.97-95.03,30.72-5.04,71.67.53,85.36,32.24,7.64,19.43,6.55,41.01,6.77,61.44-.13,12.39.4,24.67.74,36.99.42,20.18-.5,39.75-.5,62.66"
+          d="M880.6,95.71c.83,66.73,1.67,133.46,2.5,200.2"
+        />
+        <motion.path
+          variants={pathVariants}
+          stroke={2}
+          initial={"hidden"}
+          animate={isInView ? "visible" : "hidden"}
+          class="cls-3"
+          d="M880.6,163.33c16.86-33.02,66.33-56.6,102.55-48.71"
+        />
+        <motion.path
+          variants={pathVariants}
+          stroke={2}
+          initial={"hidden"}
+          animate={isInView ? "visible" : "hidden"}
+          class="cls-3"
+          d="M1496.6,91.95c.83,66.73,1.67,133.46,2.5,200.2"
+        />
+        <motion.path
+          variants={pathVariants}
+          stroke={2}
+          initial={"hidden"}
+          animate={isInView ? "visible" : "hidden"}
+          class="cls-3"
+          d="M1496.6,159.57c16.86-33.02,66.33-56.6,102.55-48.71"
         />
       </motion.svg>
     </div>
   );
 };
 
-export default Dummysv;
+export default Presvg;

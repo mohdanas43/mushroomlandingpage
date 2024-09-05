@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Svg3 from "@/public/icons/svg3";
+import Presvg from "@/public/icons/presvg";
 
 const PREORDER = () => {
   const ref1 = useRef(null);
@@ -16,9 +17,8 @@ const PREORDER = () => {
           <motion.div
             className="w-[30rem] absolute top-20 right-44  "
             initial={{ y: 100 }}
-            ref={ref1}
-            animate={{ y: isInView ? 70 : 150 }}
-            transition={{ duration: 1 }}
+            animate={{ y: isInView ? 70 : 180 }}
+            transition={{ duration: 1.5 }}
           >
             {" "}
             <Image
@@ -45,15 +45,18 @@ const PREORDER = () => {
             </div>
           </div>
         </div>
-        <div className=" pt-[3rem] px-10  font-bold "><Svg3/></div>
+        <div className=" pt-[3rem] px-10  font-bold " >
+          <Presvg/>
+        </div>
 
         <div className="relative top-20 flex justify-center items-center w-[80%]">
           {" "}
           <motion.div
             className="w-[30rem] absolute   "
+            ref={ref1}
             initial={{ y: 100 }}
-            animate={{ y: isInView ? 70 : 150 }}
-            transition={{ duration: 1 }}
+            animate={{ y: isInView ? 70 : 180 }}
+            transition={{ duration: 1.5 }}
           >
             {" "}
             <Image

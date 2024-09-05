@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
-import Dumm1 from "../sections/dummy/dumm1";
-import Dummy from "../sections/dummy/dummy";
+import Dummy from "../components/dummy";
+import Presvg from "@/public/icons/presvg";
+
 
 
 const Page = () => {
   return (
     <div>
   
-      <Dummy/>
+    <Presvg/>
     </div>
   );
 };

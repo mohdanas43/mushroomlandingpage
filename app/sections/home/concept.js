@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import Svg2 from "@/public/icons/svg2";
+import Dummysv from "@/public/icons/dummysv";
 
 const Concept = () => {
   const ref1 = useRef(null);
@@ -27,15 +28,15 @@ const Concept = () => {
             sed velit necessitatibus, placeat quidem.
           </div>
         </div>
-        <div className="font-bold absolute bottom-0  text-[15rem] ">
-        <Svg2/>
+        <div className="font-bold absolute bottom-0   ">
+        <Dummysv/>
         </div>
 
         <div className="relative right-10 top-20 ">
           <motion.div 
             className="w-[50rem]  absolute top-[-3rem]  right-[-13rem] "
             initial={{ y: 100, rotate:"35deg" }}
-            ref={ref1}
+            
             animate={{ y: isInView ? 70 : 150 }}
             transition={{ duration: 1 }}  
            
@@ -66,9 +67,11 @@ const Concept = () => {
           </motion.div>
           <motion.div 
             className=" w-[40rem] absolute right-[-7rem] top-[28rem] "
+            ref={ref1}
             initial={{ y: 60 }}
             animate={{ y: isInView ? 0 : 100 }}
             transition={{ duration: 1, 
+              
              }}
           >
             {" "}
